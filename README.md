@@ -115,7 +115,7 @@ o R-sqaure: 1.000
 &nbsp;
 &nbsp;
 
-**Case-1: Converting TraPPE dihedral type to gromacs type**
+**Case-3: Converting TraPPE dihedral type to gromacs type**
 
 ```python
 from GMXFit.TraPPE import TrappePES
