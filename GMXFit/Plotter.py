@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
-from matplotlib import rc 
+from matplotlib import rc
 
 
-#turn on latex 
-rc('text', usetex=True)
+# turn on latex if available.
+try:
+    rc("text", usetex=True)
+except:
+    pass
 
 
 class Plotter:
