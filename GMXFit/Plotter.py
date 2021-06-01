@@ -24,8 +24,11 @@ class Plotter:
             self.ylabel, fontsize=16, color=self.textColor,
         )
 
+        # self.ax.set_title(
+        #     self.title, fontsize=14, position=(0.5, 1.10), color=self.textColor,
+        # )
         self.ax.set_title(
-            self.title, fontsize=14, position=(0.5, 1.10), color=self.textColor,
+            self.title, fontsize=16, pad=25, color=self.textColor,
         )
 
         legend = self.ax.legend(
