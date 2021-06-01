@@ -1,4 +1,9 @@
 import matplotlib.pyplot as plt
+from matplotlib import rc 
+
+
+#turn on latex 
+rc('text', usetex=True)
 
 
 class Plotter:
@@ -18,7 +23,7 @@ class Plotter:
         )
 
         self.ax.set_title(
-            self.title, fontsize=14, position=(0.5, 1.05), color=self.textColor,
+            self.title, fontsize=14, position=(0.5, 1.10), color=self.textColor,
         )
 
         legend = self.ax.legend(
