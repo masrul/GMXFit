@@ -52,7 +52,7 @@ class Plotter:
 
         for spine in ["bottom", "top", "right", "left"]:
             self.ax.spines[spine].set_color("white")
-        self.ax.tick_params(axis="both", colors="white", direction="inout")
+        self.ax.tick_params(axis="both", colors="white", direction="inout",labelsize=14)
 
     def setTxt(self):
 
