@@ -98,7 +98,7 @@ class Plotter:
             self.ylabel = dihYLabel
             self.title = r"$\mathrm{Fitting~for:~}$" + FourierEqTxt
 
-    def scatterPlot(self, x, y, label="Data"):
+    def scatterPlot(self, x, y, label=r"$\mathrm{Data}$"):
         self.ax.scatter(
             x,
             y,
@@ -110,7 +110,7 @@ class Plotter:
             linewidths=1.5,
         )
 
-    def linePlot(self, x, y, label="Fitted"):
+    def linePlot(self, x, y, label=r"$\mathrm{Fitted}$"):
         self.ax.plot(x, y, linewidth=1.5, label=label, color="red")
 
     def finalize(self):
