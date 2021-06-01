@@ -24,9 +24,6 @@ class Plotter:
             self.ylabel, fontsize=16, color=self.textColor,
         )
 
-        # self.ax.set_title(
-        #     self.title, fontsize=14, position=(0.5, 1.10), color=self.textColor,
-        # )
         self.ax.set_title(
             self.title, fontsize=16, pad=25, color=self.textColor,
         )
@@ -55,7 +52,9 @@ class Plotter:
 
         for spine in ["bottom", "top", "right", "left"]:
             self.ax.spines[spine].set_color("white")
-        self.ax.tick_params(axis="both", colors="white", direction="inout",labelsize=14)
+        self.ax.tick_params(
+            axis="both", colors="white", direction="inout", labelsize=14
+        )
 
     def setTxt(self):
 
