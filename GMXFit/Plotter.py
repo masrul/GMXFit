@@ -1,12 +1,11 @@
 import matplotlib.pyplot as plt
 from matplotlib import rc
+from distutils.spawn import find_executable
 
 
 # turn on latex if available.
-try:
+if find_executable("latex"):
     rc("text", usetex=True)
-except:
-    pass
 
 
 class Plotter:
